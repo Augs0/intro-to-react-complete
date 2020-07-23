@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+:root{
+    --wrapper-width:500px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html, body{
+    background:whitesmoke;
+    padding:0;
+    margin:0;
+    display:flex;
+    align-items:center;
+    justify-content: center;;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.wrapper{
+    display:flex;
+    justify-content:center;
+    font-family:monospace;
+    font-size:1.5rem;
+    margin-top:40px;
+    max-width:var(--wrapper-width);
+    height:500px;
+    background:darkslategray;
+    color:white;
+    padding:30px;
+    box-shadow: rgb(55, 108, 177) 10px 2px 20px;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
 }
 
-.App-link {
-  color: #61dafb;
+.header-img{
+    width:var(--wrapper-width);
+    position:relative;
+    top:-40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.details{
+    padding:20px;
+    text-align:center;
+}
+
+.details button{
+    background:transparent;
+    padding:10px;
+    margin:10px;
+    color:white;
+    border:1px black solid;
+    transition: background 0.5s;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -ms-transition: background 0.5s;
+    -o-transition: background 0.5s;
+}
+
+.details button:hover{
+    cursor:pointer;
+    background:white;
+    color:black;
+}
+
+#contact-user{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    padding:20px;
+}
+
+#contact-user input{
+    padding:10px;
+}
+
+#contact-user label{
+    margin:10px 0;
+    font-size:16px;
+}
+
+#contact-user button{
+    background:transparent;
+    width:100px;
+    padding:10px;
+    margin:10px;
+    color:black;
+    border:1px black solid;
+    transition: background 0.5s;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -ms-transition: background 0.5s;
+    -o-transition: background 0.5s;
+}
+
+#contact-user button:hover{
+    cursor:pointer;
+    background:black;
+    color:white;
+}
+
+.sent-success{
+    width:200px;
+    padding:10px;
+    font-size:1.2rem;
+    font-weight:700;
+    text-align:center;
+    color:green;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
 }
